@@ -1,0 +1,19 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.l-footer{
+	@include setMinWidth(1020px);
+	border-top:3px solid #be1b81;
+	background: #FFFFFF;
+	@include breakpoint1{
+		min-width:320px;
+		@include setWidthContainer();
+	}
+	.c-footer1{
+		img{
+			width:100%;
+		}
+	}
+}
+/*
+------------------------------------------------------------*/

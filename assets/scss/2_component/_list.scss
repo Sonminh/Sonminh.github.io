@@ -1,0 +1,123 @@
+/*------------------------------------------------------------
+list
+------------------------------------------------------------*/
+
+/* .c-list1
+------------------------------------------------------------*/
+.c-list1{
+	&__text{
+		float:left;
+		p{
+			@include setFont(1.4rem,#6b6b6b,500,$font-osaka)
+			@include breakpoint1{
+				@include setFont(1rem,#6b6b6b,500,$font-osaka)
+			}
+		}
+	}
+	&__size{
+		float:left;
+		li{
+			display:inline-block;
+		}
+		a{
+			display:inline-block;
+			@include setFont(1.4rem,#FFFFFF)
+			background: #6b6b6b;
+			width:30px;
+			height:30px;
+			text-align: center;
+			line-height: 30px;
+			margin-right:10px;
+			@include breakpoint1{
+				width:20px;
+				height:20px;
+				line-height: 20px;
+				margin-right:5px;
+				@include setFont(0.8rem,#FFFFFF)
+			}
+		}
+		.free{
+			width:60px;
+		}
+	}
+	@include clearfix;
+}
+/* .c-list2
+------------------------------------------------------------*/
+.c-list2{
+	&__text{
+		float:left;
+		p{
+			@include setFont(1.4rem,#6b6b6b,500,$font-osaka)
+			@include breakpoint1{
+				@include setFont(1rem,#6b6b6b,500,$font-osaka)
+			}
+		}
+	}
+	&__color{
+		float:left;
+		li{
+			display:inline-block;
+		}
+		a{
+			display:inline-block;
+			@include setFont(1.4rem,#FFFFFF)
+			background: #6b6b6b;
+			width:30px;
+			height:30px;
+			text-align: center;
+			line-height: 30px;
+			margin-right:10px;
+			@include breakpoint1{
+				width:20px;
+				height:20px;
+				margin-right:5px;
+			}
+		}
+	}
+	&--white{
+		background: #FFFFFF !important;
+	}
+	&--black{
+		background: #313131 !important;
+	}
+	&--yellow{
+		background: #e5d5b5 !important;
+	}
+	&--pink{
+		background: #e1cbd1 !important;
+	}
+	@include clearfix;
+}
+/* .c-list3
+------------------------------------------------------------*/
+.c-list3{
+	@include setColumnCount(2,55px);
+	@include breakpoint1{
+		@include setColumnCount(1,0);
+	}
+	li{
+		@include breakpoint1{
+			margin-bottom: 20px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}
+	a{
+		display:inline-block;
+	}
+	&__text{
+		padding-top:10px;
+		@include setFont(1.4rem,#a27655,400,$font-osaka);
+		text-decoration: underline !important;
+		@include breakpoint1{
+			@include setFont(1.2rem,#a27655,400,$font-osaka);
+		}
+	}
+	span{
+		@include breakpoint1{
+			display:block;
+		}
+	}
+}

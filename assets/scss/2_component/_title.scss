@@ -1,0 +1,119 @@
+/*.c-title1
+---------------------------------------------------------*/
+.c-title1,.c-title2{
+	img{
+		display:block !important;
+	}
+	.mobile{
+		display:none !important;
+	}
+	@include breakpoint1{
+		.desktop{
+			display:none !important;
+		}
+		.mobile{
+			display:block !important;
+			img{
+				width:100%;
+			}
+		}
+	}
+}
+/* 
+------------------------------------------------------------*/
+.c-title3{
+	position :absolute;
+	right:0px;
+	bottom:350px;
+	@include breakpoint1{
+		display:none;
+	}
+}
+/* .c-title4
+------------------------------------------------------------*/
+.c-title4{
+	h1{
+		@include setFont(6rem,#471c0d,500,$font-hira)
+		@include breakpoint1{
+			@include setFont(2.8rem,#471c0d,500,$font-hira)
+		}
+	}
+}
+/* .c-title5
+------------------------------------------------------------*/
+.c-title5{
+	p{
+		@include setFont(2.6rem,#471c0d,500,$font-hira)
+		@include breakpoint1{
+			@include setFont(1.2rem,#471c0d,500,$font-hira)
+		}
+	}
+}
+/* .c-title6
+------------------------------------------------------------*/
+.c-title6{
+	text-align: center;
+	h1{
+		@include setFont(2.4rem,#6b6b6b,500,$font-ryumin)
+		@include breakpoint1{
+			@include setFont(1.4rem,#6b6b6b,500,$font-ryumin)
+		}
+	}
+	p{
+		@include setFont(2.4rem,#6b6b6b,500,$font-Gara)
+		padding-bottom:65px;
+		@include breakpoint1{
+			@include setFont(1.4rem,#6b6b6b,500,$font-Gara)
+			padding-bottom:25px;
+		}
+	}
+}
+/* .c-title7
+------------------------------------------------------------*/
+.c-title7{
+	text-align: right;
+	p{
+		@include setFont(1.4rem,#6b6b6b,500,$font-osaka)
+		@include breakpoint1{
+			@include setFont(1rem,#6b6b6b,500,$font-osaka)
+			padding-bottom:10px;
+		}
+	}
+	a{
+		line-height:0;
+		border:1px solid #6b6b6b;
+		display:inline-block;
+		padding:7px;
+		background: #FFFFFF;
+		margin: 0 5px;
+		@include breakpoint1{
+			padding:5px;
+		}
+	}
+}
+/* .c-title8
+------------------------------------------------------------*/
+.c-title8{
+	text-align: center;
+	h2{
+		@include setFont(1.6rem,#6b6b6b,600,$font-osaka)
+		@include breakpoint1{
+			@include setFont(1.2rem,#6b6b6b,600,$font-osaka)
+		}
+	}
+}
+.c-title9{
+	text-align: center;
+	p{
+		@include setFont(1.5rem,#6b6b6b,600,$font-osaka)
+		display:inline;
+		@include breakpoint1{
+			@include setFont(1.2rem,#6b6b6b,600,$font-osaka)
+			display:block;
+		}
+	}
+	span{
+		color:#b50080;
+		border-bottom:1px solid #b50080;
+	}
+}

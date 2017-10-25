@@ -1,0 +1,113 @@
+//============================================
+// サイト幅でセンタリング
+//============================================
+@mixin center{
+	width: $baseWidth;
+	margin: 0 auto;
+}
+
+@mixin center2{
+	width: $baseWidth2;
+	margin: 0 auto;
+}
+
+
+//============================================
+// clearfix
+//============================================
+@mixin clear {
+	*zoom: 1;
+	&:after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+
+//============================================
+// フォント
+//============================================
+@mixin mincyo() {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+//============================================
+// breakpoint
+//============================================
+
+@mixin breakpoint1 {
+ 	@media screen and (max-width: #{$breakpoint1}) {
+    @content;
+ 	}
+}
+
+@mixin breakpoint2 {
+ 	@media screen and (max-width: #{$breakpoint2}) {
+    @content;
+ 	}
+}
+//============================================
+// border-box
+//============================================
+@mixin border-box(){
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*============== SET FONT ================= */
+@mixin setFont($fontSize, $color, $fontWeight: null, $fontFamily : null)
+{
+	color : $color;
+	font-size: $fontSize;
+	
+	@if $fontWeight != null{
+		font-weight :  $fontWeight;
+	}
+	@if $fontFamily != null{
+		font-family: $fontFamily;
+	}
+}
+/*============== SET COLUMN ================= */
+
+@mixin setWidth($pColumn,$pColumnMargin)
+{
+	width : (100% -($pColumn - 1) * $pColumnMargin ) / $pColumn;
+	margin-right: $pColumnMargin;
+	&:nth-child(#{$pColumn}n)
+	{
+		margin-right: 0;
+		margin-bottom : $pColumnMargin;
+	}
+	&:last-child
+	{
+		margin-bottom : 0;
+	}
+}
+/*============== CLEAR FIX ================= */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/*============== setContainer ================= */
+@mixin setWidthContainer(){
+	width:100% !important;
+	box-sizing:border-box;
+}
+/*============== setcolumnCount ================= */
+@mixin setColumnCount($column,$columnGap :null){
+	-webkit-column-count: $column; /* Chrome, Safari, Opera */
+    -moz-column-count: $column; /* Firefox */
+    column-count: $column;
+    -webkit-column-gap: $columnGap; /* Chrome, Safari, Opera */
+    -moz-column-gap: $columnGap; /* Firefox */
+    column-gap: $columnGap;
+}
+/*============== setcolumnCount ================= */
+@mixin setMinWidth($min-width){
+	min-width:$min-width;
+	width:100%;
+}

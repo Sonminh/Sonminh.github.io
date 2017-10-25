@@ -1,0 +1,153 @@
+/*------------------------------------------------------------
+navi
+------------------------------------------------------------*/
+/*
+.c-nav1
+------------------------------------------------------------*/
+.c-nav1{
+	ul{
+		@include clearfix;
+	}
+	li{
+		float:left;
+		@include setWidth(2,0);
+	}
+	a{
+		@include border-box;
+		display:block;
+		text-align: center;
+		border:1px solid #efefef;
+		border-width:0 1px 8px 1px;
+	}
+	h2{
+		@include setFont(2.4rem,#6b6b6b,400,$font-ryumin);
+		@include breakpoint1{
+			@include setFont(1.5rem,#6b6b6b,400,$font-ryumin);
+		}
+	}
+	p{
+		@include setFont(2.4rem,#6b6b6b,400,$font-Gara);
+		@include breakpoint1{
+			@include setFont(1.5rem,#6b6b6b,400,$font-Gara);
+		}
+	}
+	&__img{
+		padding:15px 0;
+	}
+}
+/*
+c.nav1--color
+------------------------------------------------------------*/
+.c-nav1--color{
+	a{
+		border-bottom:8px solid #ece4ca;
+	}
+	h2{
+		color:#d2b659;
+	}
+	p{
+		color:#d2b659;
+	}
+}
+/*
+.c-nav2
+------------------------------------------------------------*/
+.c-nav2{
+	background: #f4f4f4;
+	ul{
+		@include clearfix;
+	}
+	li.c-nav2__list{
+		float:left;
+		@include setWidth(3,0);
+		@include breakpoint1{
+			@include setWidth(2,0);
+		}
+	}
+}
+/*
+.c-nav3
+------------------------------------------------------------*/
+.c-nav3{
+	ul{
+		@include clearfix;
+	}
+	li{
+		text-align: center;
+		float:left;
+		@include setWidth(4,0);
+		@include border-box;
+	}
+	a{
+		display:block;
+		border:1px solid #e8e8e8;
+		pading:15px 0;
+	}
+	h2{
+		@include setFont(1.8rem,#353535,600,$font-osaka)
+		@include breakpoint1{
+			@include setFont(1.2rem,#353535,600,$font-osaka)
+		}
+	}
+	p{
+		@include setFont(1.4rem,#9b9b9b)
+		@include breakpoint1{
+			@include setFont(1rem,#9b9b9b)
+		}
+	}
+	&--red{
+		border-top: 5px solid #ec6178 !important;
+	}
+	&--blue{
+		border-top: 5px solid #257bad !important;
+	}
+	&--yellow{
+		border-top: 5px solid #ffe400 !important;
+	}
+	&--brown{
+		border-top: 5px solid #e7d9ad !important;
+	}
+}
+/*
+.c-nav4
+------------------------------------------------------------*/
+.c-nav4{
+	ul{
+		@include clearfix;
+		background: #f4f4f4;
+	}
+	li{
+		float:left;
+		@include setWidth(2,0);
+		border-right:1px solid #dddddd;
+		@include border-box;
+		&:last-child{
+			border-right:none;
+		}
+	}
+	a{
+		display:block;
+		text-align: center;
+		padding:12px 0 22px 0;
+	}
+	img{
+		vertical-align: middle;
+		@include breakpoint1{
+			width:30px;
+		}
+	}
+	&__text1{
+		vertical-align: middle;
+		@include setFont(1.8rem,#bf1d82,600,$font-osaka)
+		@include breakpoint1{
+			@include setFont(1.1rem,#bf1d82,600,$font-osaka)
+		}
+	}
+	&__text2{
+		vertical-align: middle;
+		@include setFont(1.8rem,#353535,600,$font-osaka)
+		@include breakpoint1{
+			@include setFont(1.1rem,#353535,600,$font-osaka)
+		}
+	}
+}

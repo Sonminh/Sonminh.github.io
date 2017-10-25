@@ -1,0 +1,42 @@
+/*------------------------------------------------------------
+header
+------------------------------------------------------------*/
+div.l-container{
+	@include breakpoint1{
+		@include setWidthContainer()
+	}
+}
+.c-header1,.c-header2,.c-header3,.c-header4{
+	@include setMinWidth(1020px);
+	img{
+		width:100%;
+	}
+	@include breakpoint1
+	{
+		display:none;
+	}
+}
+.c-header1{
+	background: #FFFFFF;
+
+}
+.c-header2{
+	background: #be1b80;
+}
+.c-header3{
+	background: #FFFFFF;
+	border-bottom:4px solid #e21600;
+}
+.c-header4{
+	display:none;
+	min-width:320px;
+	@include breakpoint1
+	{
+		display:block;
+		img{
+			width:100%;
+		}
+	}
+}
+/*
+------------------------------------------------------------*/

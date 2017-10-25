@@ -1,0 +1,63 @@
+/*------------------------------------------------------------
+.c-mainvisual
+------------------------------------------------------------*/
+.c-mainvisual{
+	min-width:1020px;
+	width:100%;
+	background: url("../image/index/bg_03.png") no-repeat center center;
+	background-size:cover;
+	@include breakpoint1{
+		background: url("../image/index/bg_03.png") no-repeat right top;
+		min-width:320px;
+	}
+}
+/* .c-info1
+------------------------------------------------------------*/
+.c-info1{
+	display:inline-block;
+	padding:20px;
+	background: #fff9e4;
+	p{
+		@include setFont(1.8rem,#471c0d,100,$font-hira)
+		@include breakpoint1{
+			@include setFont(0.9rem,#471c0d,100,$font-hira)
+		}
+	}
+}
+/* .c-info2
+------------------------------------------------------------*/
+.c-info2{
+	&__img{
+		img{
+			width:100%;
+		}
+	}
+	&__info{
+		padding: 25px 0 50px 0;
+		@include breakpoint1{
+			padding: 10px 0 20px 0;
+		}
+	}
+	&__text{
+		text-align: center;
+		h2{
+			@include setFont(1.6rem,#6b6b6b,600,$font-osaka)
+			@include breakpoint1{
+				@include setFont(1rem,#6b6b6b,600,$font-osaka)
+			}
+		}
+		h3{
+			@include setFont(1.4rem,#6b6b6b,500,$font-osaka)
+			@include breakpoint1{
+				@include setFont(1rem,#6b6b6b,600,$font-osaka)
+			}
+		}
+		span{
+			@include setFont(1.4rem,#6b6b6b,500,$font-osaka)
+			@include breakpoint1{
+				@include setFont(1rem,#6b6b6b,500,$font-osaka)
+				display:block;
+			}
+		}
+	}
+}

@@ -1,0 +1,160 @@
+/*------------------------------------------------------------
+index
+.p-skincare1
+------------------------------------------------------------*/
+.p-skincare1{
+	@include setMinWidth(1020px);
+	@include breakpoint1{
+		min-width:320px;
+		width:100%;
+	}
+	.c-mainvisual{
+		padding:110px 0;
+		@include breakpoint1{
+			padding:50px 0;
+		}
+	}
+	.l-container{
+		position:relative;
+		text-align: center;
+		@include breakpoint1{
+			@include setWidthContainer();
+		}
+	}
+	.c-title2{
+		padding-top:30px;
+		@include breakpoint1{
+			padding-top:15px;
+		}
+	}
+	.c-title4{
+		padding-top:147px;
+		text-align: center;
+		@include breakpoint1{
+			padding-top:20px;
+		}
+	}
+	.c-title5{
+		padding-top:40px;
+		text-align: center;
+		@include breakpoint1{
+			padding-top:20px;
+		}
+	}
+	.c-info1{
+		margin-top:45px;
+		text-align: center;
+		@include breakpoint1{
+			margin-top:10px
+		}
+	}
+}
+
+/* .p-skincare2
+------------------------------------------------------------*/
+.p-skincare2{
+	@include setMinWidth(1020px);
+		@include breakpoint1{
+			min-width:320px;
+			@include setWidthContainer();
+		}
+
+	.c-nav2{
+		padding-bottom:40px;
+		@include breakpoint1{
+			padding-bottom:10px;
+		}
+	}
+	.c-list1{
+		margin-top:15px;
+	}
+	.c-list2{
+		margin-top:10px;
+	}
+	.c-title6{
+		padding-top:50px;
+		background: url("../image/index/bg_01.jpg") no-repeat center center;
+		background-size:cover;
+		@include breakpoint1{
+			padding-top:15px;
+		}
+	}
+	.u-bg1{
+		.c-title6{
+			background: url("../image/index/bg_02.jpg") no-repeat center center;
+			background-size:cover;
+			h1{
+				@include setFont(2.4rem,#b89933,500,$font-ryumin)
+				@include breakpoint1{
+					@include setFont(1.4rem,#b89933,500,$font-ryumin)
+				}
+			}
+			p{
+				@include setFont(2.4rem,#b89933,500,$font-Gara)
+				@include breakpoint1{
+					@include setFont(1.4rem,#b89933,500,$font-Gara)
+				}
+			}
+		}
+		.c-title7{
+			p{
+				@include setFont(1.4rem,#6b6b6b,500,$font-osaka)
+				@include breakpoint1{
+					@include setFont(1rem,#6b6b6b,500,$font-osaka)
+				}
+			}
+		}
+	}
+}
+/* .p-skincare3
+------------------------------------------------------------*/
+.p-skincare3{
+	@include setMinWidth(1020px);
+	padding:72px 0 56px 0;
+	@include breakpoint1{
+		min-width:320px;
+		@include setWidthContainer();
+		padding:20px 0;
+	}
+	.l-container{
+		text-align: center;
+	}
+	.c-title8{
+		padding-bottom:20px;
+		@include breakpoint1{
+			padding-bottom:0px;
+		}
+	}
+	.c-btn1{
+		padding:25px 0;
+		@include breakpoint1{
+			padding:10px 0;
+		}
+	}
+	.c-title9{
+		padding-bottom:70px;
+		@include breakpoint1{
+			padding-bottom:25px;
+		}
+	}
+}
+/* .p-skincare4
+------------------------------------------------------------*/
+.p-skincare4{
+	@include setMinWidth(1020px);
+	@include breakpoint1{
+		min-width:320px;
+		@include setWidthContainer();
+	}
+	border-top: 1px solid #e2e1e1;
+	.c-nav4{
+		margin-top:20px;
+		background: #f4f4f4;
+		@include breakpoint1{
+			margin-top:10px;
+		}
+	}
+}
+.p-skincare5{
+	
+}
